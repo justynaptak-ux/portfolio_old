@@ -1,74 +1,409 @@
-html, body {
-    background: linear-gradient(to left, #1491BA, #037971);
-    font-family: 'calibri', sans-serif;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 1.4vw;
+@import url("https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap");
+
+html,
+body {
+  background: linear-gradient(to left, #1491ba, #037971);
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5vw;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
 }
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+* {
+  box-sizing: border-box;
 }
-.heading {
-    margin: 20px;
-    color: white;
+
+.site-header {
+  display: flex;
+  margin: 0 auto;
+  width: 1180px;
+  /* padding: 1rem 2rem; */
+}
+
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: remove bullets;
+  display: flex;
+}
+
+nav li {
+  padding: 0 0 0 0.5rem;
+}
+nav a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: white;
+  text-decoration: none;
 }
 .heading:hover {
-    opacity: 0.7;
+  opacity: 0.5;
+}
+.logo {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  margin: auto 0;
+}
+
+.logo p {
+  display: inline;
+  margin: auto 0.5rem;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #515151;
+}
+
+#hello {
+  font-size: 4vw;
+  letter-spacing: 1vw;
+  z-index: 8;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 48, 30, 0.822);
+  position: absolute;
+  opacity: 50%;
 }
 
 .picture {
-    display: flex;
-    flex-wrap: row nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 400px;
-    background-image: url(img/las.jpg);
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  background-image: url(img/lasportfolio.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
 }
-
 .text {
-    position: relative;
-    color: white;
-    opacity: 100%;
+  position: relative;
+  color: white;
+  font-size: 2vw;
+  opacity: 100%;
+  margin: 0;
+  padding: 0;
 }
 .social {
-    position: relative;
-    align-content: space-around;
+  position: relative;
+  align-content: space-around;
+}
+.social a:nth-child(2) {
+  margin: 2.5vw;
 }
 .fa {
-    position: relative;
-    align-content: space-between;
-    padding: 1vw;
-    font-size: 1vw;
-    width: 1em;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    margin-top: 15px;;
-  }
-  
+  position: relative;
+  align-content: space-between;
+  padding: 1vw;
+  font-size: 1vw;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
 .fa:hover {
-    opacity: 0.5;
-  }
+  opacity: 0.5;
+}
 
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
 
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.help {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.7vw;
+  margin-top: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.help_buttons {
+  justify-content: space-evenly;
+  display: flex;
+  width: 50vw;
+}
+
+.victory {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  width: 100px;
+  height: 55px;
+  text-align: center;
+  border-style: solid;
+  border-color:#62929E;
+}
+.victory:hover {
+  opacity: 0.5;
+}
+
+.metric {
+ position: relative;
+ width: auto;
+ height: auto;
+ padding: 3rem;
+ margin-top: 20px;
+ background: linear-gradient(90deg, #0d4b3d, transparent 30%);  
+}
+
+.metric_text {
+  display: flex;
+  background-color: #62929E;
+  width: 95%;
+  margin: auto;
+  padding: 1%;
+  color: white;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.metrix_text div {
+  padding: 1rem;
+  color: white;
+}
+#photo {
+  width: 70%;
+  border-radius: 50%;
+  box-shadow: 5%;
+  margin: 0;
+  padding: 0;
+}
+.aboutme {
+margin-left: 5%;
+font-size: 1.3rem;
+}
+
+.include1 {
+  width: 20%
+}
+.include2 {
+  width: 35%
+}
+.include3 {
+  width: 45%;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  padding: 3rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+.skillinside {
+  display:flex;
+  width: 95%;
+  height: 95%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-between;
+}
+.ux {
+  width: 270px;
+  height: 270px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  background-image: url(img/woodportfolio.jpg);
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
+  transition: transform 0.2s ease-in-out;
+}
+.frontend {
+  width: 270px;;
+  height: 270px;
+  border-style: solid;
+  border-color: white;
+  background-image: url(img/lasportfolio.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
+  transition: transform 0.2s ease-in-out;
+}
+.backend {
+  width: 270px;
+  height: 270px;
+  background-image: url(img/wood2portfolio.jpg);
+  background-size: cover;
+  background-position: left;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
+  transition: transform 0.2s ease-in-out;
+}
+.circletext {
+  text-align:center; 
+  vertical-align: middle;
+  display: table-cell;  
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.ux:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.frontend:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.backend:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+
+
+.gallery {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50 auto;
+
+}
+.galleryinside {
+ flex: 1 50%;
+ background-color: white;
+ border-color: white;
+ border-style: solid;
+ border-width: 1px;
+ height: 17vw;
+}
+
+.galleryinside:nth-of-type(3n) {
+  flex: 0 40%;
+}
+
+.galleryinside:hover img{
+  transform: hover;
+  opacity: 0.5;
+} 
+.galleryinside:hover .txt {
+  display: block;
+}
+.txt {
+  margin: 20px;
+  z-index: 2;
+  color: black;
+  position: absolute;
+  display: none;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  color: white;
+}
+
+input[type=submit] {
+  background-color: rgb(70, 143, 161);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(44, 85, 95);
+}
+
+.container {
+  background-color: rgb(44, 85, 95);
+  padding: 1%;
+  width: 25%;
+  height: auto;
+  
+}
+.container label {
+  color: white;
+}
+.lastel {
+  width: 40%;
+  height: auto;
+  border-color: rgb(44, 85, 95);;
+  border-style: solid;
+  margin-left: 17%;
+  background-image: url(img/lasportfolio.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.form {
+  width: 100%;
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+  background-color: rgb(44, 85, 95);
+  color: white;
+  text-align: center;
+  font-size: 1.1vw;
+}
+
