@@ -20,14 +20,15 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1180px;
-  /* padding: 1rem 2rem; */
+  height: 10%;
+  padding: 1rem 2rem; 
 }
 
 .site-nav {
   margin-left: auto;
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 3%;
 }
 
 nav ul {
@@ -41,8 +42,8 @@ nav li {
 nav a {
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 15px;
+  font-size: 1.1rem;
+  line-height: 1%;
   letter-spacing: 0.02em;
   color: white;
   text-decoration: none;
@@ -60,11 +61,10 @@ nav a {
 .logo p {
   display: inline;
   margin: auto 0.5rem;
-  line-height: 21px;
+  line-height: 1%;
   letter-spacing: 0.02em;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
   color: #515151;
 }
 
@@ -93,10 +93,11 @@ nav a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px;
+  height: 60%;
   background-image: url(img/lasportfolio.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
 }
@@ -124,9 +125,9 @@ nav a {
   height: 2em;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 1.5% 1%;
   border-radius: 50%;
-  margin-top: 15px;
+  margin-top: 2%;
 }
 
 .fa:hover {
@@ -152,12 +153,13 @@ nav a {
   align-items: center;
   color: white;
   font-size: 1.7vw;
-  margin-top: 20px;
+  margin-top: 2%;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .help_buttons {
+  display: flex;
   justify-content: space-evenly;
   display: flex;
   width: 50vw;
@@ -168,11 +170,12 @@ nav a {
   background-color: transparent;
   color: white;
   font-size: 1rem;
-  width: 100px;
-  height: 55px;
+  width: 20%;
+  height: 4vw;
   text-align: center;
   border-style: solid;
   border-color:#62929E;
+  border-radius: 5%;
 }
 .victory:hover {
   opacity: 0.5;
@@ -231,8 +234,8 @@ font-size: 1.3rem;
   width: 100%;
   height: 60%;
   padding: 3rem;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 
 }
 .skillinside {
@@ -245,8 +248,8 @@ font-size: 1.3rem;
   align-content: space-between;
 }
 .ux {
-  width: 270px;
-  height: 270px;
+  width: 14rem;
+  height: 14rem;
   border-style: solid;
   border-color: white;
   border-radius: 50%;
@@ -258,8 +261,8 @@ font-size: 1.3rem;
   transition: transform 0.2s ease-in-out;
 }
 .frontend {
-  width: 270px;;
-  height: 270px;
+  width: 14rem;
+  height: 14rem;
   border-style: solid;
   border-color: white;
   background-image: url(img/lasportfolio.jpg);
@@ -271,8 +274,8 @@ font-size: 1.3rem;
   transition: transform 0.2s ease-in-out;
 }
 .backend {
-  width: 270px;
-  height: 270px;
+  width: 14rem;
+  height: 14rem;
   background-image: url(img/wood2portfolio.jpg);
   background-size: cover;
   background-position: left;
@@ -292,22 +295,57 @@ font-size: 1.3rem;
   color: #fff;
 }
 
+.circle1hover {
+display: none;
+}
+
 .ux:hover {
   transform: scale(1.2);
-  opacity: 0.5;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("img/woodportfolio.jpg");
 }
+.ux:hover p.circletext {
+display: none;
+}
+.ux:hover p.circle1hover {
+  text-align:center; 
+  vertical-align: middle;
+  display: table-cell;  
+  font-size: 1.5rem;
+  color: rgb(10, 54, 28);
+}
+
 
 .frontend:hover {
   transform: scale(1.2);
-  opacity: 0.5;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(img/lasportfolio.jpg);
 }
+
+.frontend:hover p.circletext {
+  display: none;
+  }
+.frontend:hover p.circle1hover {
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell;  
+    font-size: 1.5rem;
+    color: rgb(10, 54, 28);
+  }
 
 .backend:hover {
   transform: scale(1.2);
-  opacity: 0.5;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(img/wood2portfolio.jpg);
 }
 
-
+.backend:hover p.circletext {
+  display: none;
+  }
+.backend:hover p.circle1hover {
+  text-align:center; 
+  vertical-align: middle;
+  display: table-cell;  
+  font-size: 1.5rem;
+  color: rgb(10, 54, 28);
+  }
 
 .gallery {
   position: relative;
@@ -337,7 +375,7 @@ font-size: 1.3rem;
   display: block;
 }
 .txt {
-  margin: 20px;
+  margin: 3%;
   z-index: 2;
   color: black;
   position: absolute;
@@ -345,22 +383,24 @@ font-size: 1.3rem;
 }
 
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  width: 100%; 
+  padding: 5%; 
+  border: 1% solid #ccc; 
+  box-sizing: border-box; 
+  margin-top: 1%; 
+  margin-bottom: 3%;
   resize: vertical;
   color: white;
+  font-size: 1vw;
 }
 
 input[type=submit] {
   background-color: rgb(70, 143, 161);
   color: white;
-  padding: 12px 20px;
+  padding: 3% 8%;
   border: none;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 input[type=submit]:hover {
@@ -376,6 +416,13 @@ input[type=submit]:hover {
 }
 .container label {
   color: white;
+  font-size: 1vw;
+}
+.backgroundover {
+  width: 40%;
+  height: auto;
+  border-color: pink;
+  border-style:solid
 }
 .lastel {
   width: 40%;
@@ -384,6 +431,7 @@ input[type=submit]:hover {
   border-style: solid;
   margin-left: 17%;
   background-image: url(img/lasportfolio.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
@@ -391,19 +439,24 @@ input[type=submit]:hover {
 .form {
   width: 100%;
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
+#lasteltxt {
+  text-align: center;
+  color: rgb(44, 85, 95);
+}
 
 .footer {
   left: 0;
-  bottom: 0;
+  margin: 0;
   width: 100%;
   height: 4%;
   background-color: rgb(44, 85, 95);
   color: white;
   text-align: center;
   font-size: 1.1vw;
+
 }
 
